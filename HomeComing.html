@@ -1,0 +1,53 @@
+<style>
+    body{
+      background: url(BACKGROUND.jpg);
+    }
+    .btn {
+      background: linear-gradient(to right, gold, darkorange);
+      color: white;
+      --width: 150px;
+      --height: calc(var(--width) / 3);
+      width: var(--width);
+      height: var(--height);
+      text-align: center;
+      line-height: var(--height);
+      font-size: calc(var(--height) / 3.5);
+      font-family: sans-serif;
+      letter-spacing: 0.1em;
+      border: 1px solid darkgoldenrod;
+      border-radius: 2em;
+      transform: perspective(500px) rotateY(-15deg);
+      text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+      transition: 0.5s;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .btn:hover {
+      transform: perspective(500px) rotateY(15deg);
+      text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: -100%;
+      transition: 0.5s;
+    }
+    
+    .btn:hover::before {
+      left: 100%;
+    }
+  
+  </style>
+  <center>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+      <video poster="HomeComing.jpg" width="520" height="440" controls preload="auto">
+          <source src="https://storage.googleapis.com/avengersmoviescollection.in/AVENGERS%20SITE/avengers/Spider-Man%20Homecoming%20(2017)%20%5B1080p%5D%20%5BYTS.AG%5D/Spider-Man.Homecoming.2017.1080p.BluRay.x264-%5BYTS.AG%5D.mp4">
+        </video><br><br><br>
+        <a href="https://storage.googleapis.com/avengersmoviescollection.in/AVENGERS%20SITE/avengers/Spider-Man%20Homecoming%20(2017)%20%5B1080p%5D%20%5BYTS.AG%5D/Spider-Man.Homecoming.2017.1080p.BluRay.x264-%5BYTS.AG%5D.mp4" download><button class="btn">DOWNLOAD</button></a>
+      </center>
